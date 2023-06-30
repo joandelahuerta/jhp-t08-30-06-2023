@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T08 - Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+</head>
+<body>
+    <!-- JS con las funciones de la calculadora -->
+    <script src="./js/calculadora.js"></script>
+    <div class="container-fluid">
+        <div class="calculadora">
+            <input type="text" class="barra" id="resultado">
+            <div class="row linea">
+                <div class="col-3"><button onclick="inNumero(7)" class="btn btn-primary botones">7</button></div>
+                <div class="col-3"><button onclick="inNumero(8)" class="btn btn-primary botones">8</button></div>
+                <div class="col-3"><button onclick="inNumero(9)" class="btn btn-primary botones">9</button></div>
+                <div class="col-3"><button onclick="limpiar()" class="btn btn-danger botones">C</button></div>
+            </div>
+            <div class="row linea">
+                <div class="col-3"><button onclick="inNumero(4)" class="btn btn-primary botones">4</button></div>
+                <div class="col-3"><button onclick="inNumero(5)" class="btn btn-primary botones">5</button></div>
+                <div class="col-3"><button onclick="inNumero(6)" class="btn btn-primary botones">6</button></div>
+                <div class="col-3"><button onclick="inOperacion('-')" class="btn btn-warning botones">-</button></div>
+            </div>
+            <div class="row linea">
+                <div class="col-3"><button onclick="inNumero(1)" class="btn btn-primary botones">1</button></div>
+                <div class="col-3"><button onclick="inNumero(2)" class="btn btn-primary botones">2</button></div>
+                <div class="col-3"><button onclick="inNumero(3)" class="btn btn-primary botones">3</button></div>
+                <div class="col-3"><button onclick="inOperacion('+')" class="btn btn-warning botones">+</button></div>
+            </div>
+            <div class="row linea">
+                <div class="col-3"><button onclick="inNumero(0)" class="btn btn-primary botones">0</button></div>
+                <div class="col-3"><button onclick="inOperacion('/')" class="btn btn-warning botones">/</button></div>
+                <div class="col-3"><button onclick="inOperacion('*')" class="btn btn-warning botones">*</button></div>
+                <div class="col-3"><button onclick="resultado()" class="btn btn-warning botones">=</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
